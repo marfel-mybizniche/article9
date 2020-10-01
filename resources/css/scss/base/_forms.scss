@@ -1,0 +1,274 @@
+
+/* FORMS */
+$field-height: 54px;
+$field-height-sm: 45px;
+
+::-moz-placeholder{color:#333;opacity:1;}
+:-ms-input-placeholder{color:#333;}
+::-webkit-input-placeholder{color:#333;}
+:focus::-webkit-input-placeholder {opacity:0.3;}
+:focus::-moz-placeholder {opacity:0.3;}
+:focus:-ms-input-placeholder {opacity:0.3;}
+
+input[type="text"], 
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+textarea,
+select {
+    color: lighten($color-black, 7%);
+    border:0;
+    border: 1px solid darken($color-white, 12%);
+    height: $field-height;
+    padding:15px 20px;
+    font-size:16px;
+    font-family: $body-font-family;
+    margin: 0 0 15px;
+    -webkit-border-radius:0;
+    -moz-border-radius:0;
+    border-radius:0;
+
+    &:focus {
+        border: 1px solid $color-lblue;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+    }
+
+    .small & {
+        height: $field-height-sm;
+        padding:10px 25px 10px 10px;
+    }
+}
+input[type="text"], 
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+textarea {
+    background: $color-white;
+
+    &:focus {
+        background: $color-white;
+    }
+}
+textarea {
+    resize: none;
+    height: auto;
+}
+
+select {
+    background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIj48cGF0aCBkPSJNMTYuMDAzIDE4LjYyNmw3LjA4MS03LjA4MUwyNSAxMy40NmwtOC45OTcgOC45OTgtOS4wMDMtOSAxLjkxNy0xLjkxNnoiLz48L3N2Zz4=') no-repeat center right 6px /20px 20px;
+    padding-right:30px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    &::-ms-expand {
+        display: none;
+    }
+}
+
+.field {
+    position: relative;
+    margin-bottom: 25px;
+    text-align: left;
+
+    input, select, textarea, select {
+        margin-bottom: 0;
+    }
+
+    label {
+        font-size: 18px;
+        line-height: 1;
+        color: lighten($color-black, 7%);
+        margin-bottom: 10px;;
+    }
+
+    &.js {
+        label {
+            color: lighten($color-black, 50%);
+            position: absolute;
+            left: 20px;
+            top: 22px;
+            transition: all 0.2s ease;
+            background: $color-white;
+            z-index: 1;
+            margin-bottom: 0;
+        }
+        &.focus {
+            label {
+                top: 8px;
+                font-size: 14px; 
+            }
+            input, select, textarea, select {
+                padding-top: 25px;
+                padding-bottom: 8px;
+            }
+        }
+    }
+
+    &.error {
+        position: relative;
+        &:before {
+            content:"";
+            position: absolute;
+            left: -10px;
+            top:-10px;
+            right: -10px;
+            bottom: -10px;
+            background: rgba($color-alert, 0.3);
+            z-index: -1;
+        }
+        &.js {
+            label {
+                 color: lighten($color-black, 50%);
+            }
+        }
+
+        label {
+            color: darken($color-alert, 8%);
+        }
+        input, select, textarea {
+            border-color: lighten($color-alert, 20%);
+            & + span {
+                color: darken($color-alert, 8%);
+                font-size: 14px;
+                font-weight: bold;
+                display: block;
+                margin-bottom: -5px;
+            }
+        }
+    }
+
+    .wpcf7-not-valid {
+        border-color: darken($color-alert, 8%);
+    }
+    .wpcf7-not-valid-tip {
+        color: darken($color-alert, 8%);
+        font-size: 14px;
+        display: block;
+        margin-bottom: -5px;
+    }
+}
+
+.custom-radio {
+    label {
+        position: relative;
+        padding: 0 40px 0 45px;
+        min-height: 30px;
+        input {
+            position: absolute;
+            left: 0;
+            opacity: 0;
+
+            & + span {
+                display: block;
+                padding: 6px 0 0;
+                line-height: 1.2;
+                &:before {
+                    content: "";
+                    width: 30px;
+                    height: 30px;
+                    border:1px solid $color-light;
+                    border-radius: 50%;
+                    position: absolute;
+                    left: 0;
+                    top:0;
+                }
+            }
+            &:checked + span {
+                &:after {
+                    content: "";
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 50%;
+                    background: $color-primary;
+                    position: absolute;
+                    top:7px;
+                    left: 7px;
+                }
+            }
+        }
+
+    }
+
+    &.inline {
+        label {
+            display: inline-block;
+        }
+    }
+}
+
+.radio-drop {
+    min-width: 200px;
+    position: relative;
+
+    label {
+        display: block;
+        position: relative;
+        white-space: nowrap;
+        input {
+            position: absolute;
+            height: calc(#{$field-height} - 2px);
+            width: 100%;
+            margin:0;
+            opacity: 0;
+        }
+        span {
+            display: none;
+            height: calc(#{$field-height} - 2px);
+            padding: 10px 25px 10px 20px;
+        }
+
+        input:checked + span {
+            display: block;
+        }
+    }
+    &.show {
+        overflow: visible;
+        label {
+            span {
+                display: block;
+            }
+        
+            &:hover span {
+                background: darken($color-white, 5%);
+            }
+        }
+    }
+
+    .radio-list {
+        background: $color-white;
+        overflow: hidden;
+        border: 1px solid darken($color-white, 12%);
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+
+        &:before {
+            content:"";
+            position: absolute;
+            right: 10px;
+            top:20px;
+            background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='32' height='24' viewBox='0 0 32 24'><polygon points='0,0 32,0 16,24' style='fill: rgb%28138, 138, 138%29'></polygon></svg>");
+            background-origin: content-box;
+            background-position: right center;
+            background-repeat: no-repeat;
+            background-size: 10px 6px;
+            width: 10px;
+            height: 10px;
+            z-index: 1;
+        }
+    }
+
+    &.small {
+
+    }
+}
+
+.action {
+    .button + .button {
+        margin-top: 15px;
+    }
+}

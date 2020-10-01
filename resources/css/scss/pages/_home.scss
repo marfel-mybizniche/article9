@@ -1,0 +1,419 @@
+
+$color-faf8f4: #faf8f4;
+
+
+
+.sec_signup {
+    background: $color-faf8f4;
+    font-size: 18px;
+
+    .fieldset {
+        background: $color-white;
+        border-radius: 8px;
+        border:0;
+        padding: 30px 40px;
+        margin: 0 -90px 30px 0;
+        position: relative;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .right_img {
+        .col-image {
+            border-radius: 52px 0 0 5px;
+            overflow: hidden;
+            margin-left: 0;
+        }
+    }
+    
+	@include media(max-width, 1023px) {
+        .fieldset {
+            margin-right: 0;
+        }
+    }
+	@include media(max-width, 767px) {
+        .fieldset {
+            padding: 30px 20px 10px;
+        }
+        .field label {
+            font-size: 16px;
+        }
+        .custom-radio label {
+            padding:0 25px 0 40px;
+        }
+    }
+	@include media(max-width, 639px) {
+        .custom-radio label {
+            display: block;
+        }
+        .input-group {
+            display: block;
+
+            > * {
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+
+.sec_welcome {
+    position: relative;
+    z-index: 1;
+
+    .bg {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top:0;
+        bottom: 0;
+        z-index: -1;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .welbox {
+        padding: 85px 0;
+        max-width: 315px;
+        margin: 0 auto;
+        text-align: center;
+        * {
+            color: $color-white;
+            &:last-child {
+                margin-bottom:0;
+            }
+        }
+        h4 {
+            margin:0;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}
+
+.sec_whyapt {
+    position: relative;
+    padding: 120px 0;
+    font-size: 16px;
+
+    .whyapt_box {
+        background: $color-primary;
+        border-radius: 52px 0 52px 0;
+        overflow: hidden;
+
+        .image {
+            figure {
+                height: 100%;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .copy {
+            padding: 75px 40px 75px 75px;
+            color: $color-white;
+        }
+    }
+    
+	@include media(max-width, 1023px) {
+
+        padding:80px 0;
+        
+        .whyapt_box  {
+
+            .copy {
+                padding:40px;
+            }
+        }        
+    }
+    
+	@include media(max-width, 639px) {
+        
+        .whyapt_box  {
+
+            .copy {
+                padding:20px;
+            }
+        }        
+    }
+}
+
+.sec_instructors {
+    background: $color-faf8f4;
+    position: relative;
+    padding: 120px 0;
+    
+	@include media(max-width, 1023px) {
+        padding: 80px 0;      
+    }
+}
+
+.sec_courses {
+    margin: 90px 0;
+
+    h2 {
+        color: $color-primary;
+    }
+
+    .btn-group {
+        .button {
+            margin-right: 30px;
+        }
+    }
+    
+	@include media(max-width, 1023px) {
+        margin: 80px 0;      
+    }
+}
+
+.sec_mission {
+    margin: 90px 0;
+    font-size: 16px;
+
+    .mission_box {
+        background: $color-primary;
+        border-radius: 52px 0 52px 0;
+        overflow: hidden;
+
+        .copy {
+            padding: 30px 0 30px 90px;
+            color: $color-white;
+
+            > *:last-child {
+                margin-bottom: 0;
+            }
+        }
+        
+        .image {
+            figure {
+                height: 100%;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: left;
+            }
+        }
+    }
+    
+	@include media(max-width, 1023px) {
+        margin: 80px 0;      
+        
+        .mission_box {
+            .copy {
+                padding:40px;
+            }
+        }
+    }
+    
+	@include media(max-width, 639px) {   
+        .mission_box {
+            .copy {
+                padding:20px;
+            }
+        }
+    }
+}
+
+.sec_testimonials {
+    background: $color-faf8f4;
+    position: relative;
+    padding: 40px 0;
+
+    .testi_item {
+        & + .testi_item {
+            border-left: 3px solid $color-white;
+        }
+    }
+
+    .quote_box {
+        position: relative;
+        padding: 20px 40px 20px 55px;
+        display: block;
+
+        &:before, &:after {
+            display: none;
+        }
+        p {
+            font: 20px $heading-font-family;
+            line-height: 1.6;
+
+            &:before {
+                content: '“';
+            }
+            &:after {
+                content: '”';
+            }
+        }
+
+        cite {
+            font-size: 14px;
+            font-weight: bold;
+            font-style: normal;
+
+            &:before {
+                display: none;
+            }
+
+            small {
+                font-weight: normal;
+                font-size: 14px;
+                display: inline-block;
+                color: $color-grey;
+
+                &:before {
+                    content: "\02022";
+                    color: $color-primary;
+                    display: inline-block;
+                    margin: 0 10px;
+                    font-size: 30px;
+                    line-height: 1;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+    
+	@include media(max-width, 1023px) {   
+        .quote_box {
+            padding:20px 0;
+        }
+    }
+}
+
+.sec_classes {
+    padding:100px 0 50px;
+    text-align: center;
+
+    .tabs_nav {
+        margin:0;
+        padding:0;
+        display: flex;
+        border-bottom:2px solid lighten($color-black, 80%);
+        align-items: flex-end;
+
+        li {
+            list-style: none;
+            float: none;
+            flex:1; 
+
+            a {
+                font:bold 20px $heading-font-family;
+                padding:15px;
+                display: block;
+                max-width: 330px;
+                margin: 0 auto;
+                position: relative;
+                text-align: center;
+                background:none;
+                color: $color-dark;
+
+                &:hover {
+                    color: $color-primary;
+                }
+            }
+
+            &.is-active {
+                a {
+                    color: $color-primary;
+
+                    &:after {
+                        content:"";
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        bottom: -3px;
+                        border-bottom: 4px solid;
+                    }
+                }
+            }
+
+            &:first-child {
+                a {
+                    margin:0;
+                }
+            }
+            &:last-child {
+                a {
+                    margin-left: auto;
+                } 
+            }
+        }
+    }
+
+    .classes_list {
+        position: relative;
+        text-align: center;
+        padding: 20px 0;
+        ul {
+            margin:0 0 40px;
+            padding:0;
+
+            li {
+                display: inline-block;
+                list-style: none;
+                margin:10px 5px;
+                
+                a {
+                    display: inline-block;
+                    padding: 14px 40px;
+                    font-size: 16px;
+                    line-height: 1;
+                    color: $color-grey;
+                    border-radius: 50px;
+                    border:1px solid lighten($color-black, 83%);
+                    
+                    &:hover {
+                        background: $color-primary;
+                        color: $color-white;
+                    }
+                }
+            }
+        }
+    }
+    
+	@include media(max-width, 1023px) {   
+        .tabs_nav {    
+            li {    
+                a {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .classes_list {
+            ul {
+                li {
+                    a {
+                        padding:14px 20px;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+    
+	@include media(max-width, 639px) {   
+        .tabs_nav {    
+            li {    
+                a {
+                    font-size: 14px;
+
+                    [class*="ai"] {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

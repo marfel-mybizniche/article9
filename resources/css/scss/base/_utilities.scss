@@ -1,0 +1,30 @@
+
+//Custom foundation 
+@include media(min-width, 1600px) {
+    .grid-x {
+        > .xlarge-3 {
+            width: 25%;
+        }
+    }
+    
+    .grid-margin-x {
+        > .xlarge-3 {
+            width: calc(25% - 30px);
+        }
+    }
+}
+
+@include media(max-width, 375px) {
+    .grid-container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+
+//Sticky Fixer for smooth scroll content
+.sticky-fixer {
+    margin-top: -150px;
+    padding-top: 150px;
+}
+

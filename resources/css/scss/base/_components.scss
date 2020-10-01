@@ -1,0 +1,424 @@
+//Label Overrides
+.label {
+	font-size: 14px;
+	font-weight: 500;
+	text-transform: uppercase;
+	padding:9px 15px 8px;
+	line-height: 1;
+
+	&.success {
+		color: $color-white;
+	}
+
+	&.warning {
+		color: $color-white;
+	}
+}
+
+// Slick Custom button
+.slick-slider {
+	position: relative;
+	padding-left: 50px;
+	padding-right: 50px;
+
+	.slick-arrow {
+		width: 30px;
+		height: 30px;
+		font-size: 0;
+		cursor: pointer;
+		opacity: 0.3;
+		border:0 !important;
+
+		position: absolute;
+		top:50%;
+		transform:translate(0, -50%);
+
+		&:hover {
+			opacity: 1;
+		}
+		&:focus {
+			border:0;
+		}
+	}
+	.slick-prev {
+		left:10px;
+		background: url(../img/icn-chev-left.svg) no-repeat center;
+	}
+	.slick-next {
+		right: 10px;
+		background: url(../img/icn-chev-right.svg) no-repeat center;
+	}
+}
+
+
+// Slick Custom dots
+.slick-dots {
+	margin:0;
+	padding:0;
+
+	li {
+		list-style: none;
+		display: inline-block;
+		margin:0 5px;
+
+		button {
+			font-size: 0;
+			width: 12px;
+			height: 12px;
+			border-radius: 50%;
+			background: $color-black;
+			cursor: pointer;
+		}
+
+		&.slick-active {
+			button {
+				background: $color-primary;
+			}
+		}
+	}
+}
+
+
+// Custom pager
+.pager {
+	position: relative;
+	&.inline {
+		display: inline-block;
+	}
+	a {
+		font-size: 0;
+		display: inline-block;
+		vertical-align: middle;
+		width: 30px;
+		height: 30px;
+		opacity: 0.4;
+
+		&:hover {
+			opacity: 1;
+		}
+	}
+	.pager-prev {
+		background: url(../img/icn-chev-left.svg) no-repeat center;
+	}
+	.pager-next {
+		background: url(../img/icn-chev-right.svg) no-repeat center;
+	}
+
+	/* gr - grey(default) red(hover) */
+	&.gr {
+		.pager-prev {
+			&:hover {
+				background: url(../img/icn-chev-left-r.svg) no-repeat center;
+			}
+		}
+		.pager-next {
+			&:hover {
+				background: url(../img/icn-chev-right-r.svg) no-repeat center;
+			}
+		}
+	}
+
+	/* wr - white(default) red(hover) */
+	&.wr {
+		.pager-prev {
+			background: url(../img/icn-chev-left-w.svg) no-repeat center;
+
+			&:hover {
+				background: url(../img/icn-chev-left-r.svg) no-repeat center;
+			}
+		}
+		.pager-next {
+			background: url(../img/icn-chev-right-w.svg) no-repeat center;
+
+			&:hover {
+				background: url(../img/icn-chev-right-r.svg) no-repeat center;
+			}
+		}
+	}
+}
+
+
+.circle-list {
+	margin:0 0 30px;
+	padding:0;
+	font-size: 16px;
+
+	li {
+		list-style: none;
+		position: relative;
+		padding:0 0 0 20px;
+		margin: 0 0 15px;
+		font-weight: 500;
+
+		&:before {
+			content: "";
+			position: absolute;
+			left: 0;
+			top:7px;
+			border:2px solid $color-primary;
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+		}
+	}
+}
+
+
+//Radius button and label
+.radius {
+	border-radius: 10px;
+
+	&.button {
+		border-radius: 10px;
+	}
+}
+
+
+//Round button and label
+.round {
+	border-radius: 50px;
+
+	&.button {
+		border-radius: 50px;
+	}
+}
+
+//Pagination
+.pagination {
+	li {
+		width: 32px;
+		height: 32px;
+		line-height: 32px;
+		text-align: center;
+		border-radius: 50%;
+		overflow: hidden;
+		font-size: 14px;
+		color: $color-grey-4;
+
+		span, a {
+			padding:0;
+			color: $color-grey-4;
+
+			&:after {
+				display: none;
+			}
+		}
+
+		&.prev, &.next {
+			background: $color-grey-1;
+			font-size: 20px;
+			padding:0;
+
+			&.disabled {
+				padding:0;
+				pointer-events: none;
+				opacity: 0.6;
+			}
+		}
+
+		&.current {
+			background: $color-grey-4;
+			padding:0;
+		}
+	}
+}
+
+//Custom Dorpdown radio and checkbox
+ul.custom_dropdown {
+	margin:0;
+	padding:0;
+	min-width: 150px;
+
+	li {
+		position: relative;
+		list-style: none;
+		margin:0;
+		> a, > span {
+			display: inline-block;
+			vertical-align: top;
+			white-space: nowrap;
+			cursor: pointer;
+			padding: 12px 25px 12px 15px;
+			line-height: 1.3;
+			text-overflow: ellipsis;
+			overflow: hidden;
+			max-width: 100%;
+			position: relative;
+			font-size: 16px;
+			font-weight: 500;
+
+			i {
+				font-size: 18px;
+				position: absolute;
+				right: 5px;				
+			}
+		}
+
+		&:hover, &.hover {
+
+			> a, > span {
+				i {
+					transform: rotate(-180deg);
+				}
+			}
+
+			ul {
+				display: block;
+			}
+		}
+
+		label {
+			margin:0;
+			padding:5px 0;
+
+			input {
+				position: absolute;
+				opacity: 0;
+				top: 11px;
+				z-index: 1;
+
+				&:checked + span {
+					&:before {
+						background-color: $color-primary;
+						border: solid 1px $color-primary;
+						color: $color-white;
+					}
+					&:after {
+						content: "\2713";
+					}
+				}
+			}
+			span {
+				position: relative;
+				display: block;
+				padding:0 0 0 25px;
+				white-space: nowrap;
+				font-size: 15px;
+
+				&:before {
+					content: "";
+					width:15px;
+					height: 15px;
+					border: solid 1px $color-grey-1;
+					background-color: $color-white;
+					position: absolute;
+					left:0;
+					top:5px;
+				}
+				&:after {
+					content: "";
+					width: 15px;
+					height: 15px;
+					position: absolute;
+					left: 3px;
+					top: 4px;
+					font-size: 11px;
+					color: #fff;
+					transform: rotate(16deg);
+					font-weight: bold;
+				}
+			}
+		}
+	}
+	ul {
+		position: absolute;
+		left:0;
+		max-width: 320px;
+		top:100%;
+		margin:0;
+		display: none;
+		z-index: 999;
+		background: $color-white;
+		box-shadow: 0 3px 25px 0 rgba(207, 215, 225, 0.6);
+		padding:15px;
+		min-width: 100%;
+
+		li {
+			&:hover {
+				background: none;
+				box-shadow: none;
+			}
+			&:first-child {
+				border-bottom: 1px solid $color-grey-1;
+			}
+		}
+	}
+}
+
+
+//Date range picker inline
+
+.daterangepicker {
+	th, td {
+		font:16px $body-font-family;
+	}
+	td.start-date.end-date {
+		border:0;
+	}
+}
+.drp-inline {
+	position: relative;
+	font: 16px $body-font-family;
+
+	.daterangepicker {
+		position: relative !important;
+		top: auto !important;
+		left: auto !important;
+		float: left;
+		width: 100%;
+		margin-top: 0;
+		display: flex !important;
+		border:0;
+
+		&:before, &:after {
+			display: none;
+		}
+
+		.drp-calendar {
+			// width: 50%;
+			max-width: 100%;
+			flex-basis: 100%;
+			padding:0;
+		}
+
+		.calendar-table {
+			border:0 !important;
+			padding-right: 0 !important;
+
+			table {
+				thead {
+					tr {
+						background: $color-grey-8;
+
+						&:first-child {
+							background: $color-grey-4;
+						}
+						th {
+							font-size: 16px;
+							border-radius: 0;
+						}
+					}
+				}
+				tbody {
+					tr {
+						background: $color-grey-1;
+
+						td {
+							color: $color-black;
+							font-size: 16px;
+							border-radius: 0;
+
+							&.off {
+								background: $color-grey-1;
+								color: $color-grey-2;
+							}
+							&.active {
+								background: $color-grey-5;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

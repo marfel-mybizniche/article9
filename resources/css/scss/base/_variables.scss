@@ -1,0 +1,76 @@
+
+// lighten($color-black, 6.5%); #111
+// lighten($color-black, 13.5%); #222
+// lighten($color-black, 20%); #333
+
+
+$color-primary: #c52540;
+$color-secondary: #2ea6d9;
+$color-success: #86c837;
+$color-alert: #ff0000;
+$color-warning: #fbb200;
+
+$color-black: #000;
+$color-white: #fff;
+$color-grey: #363636; 
+$color-dark: #161e28; //1a1818
+$color-light: #d3d3d3;
+
+$color-dblue: #1d2835;
+$color-dblue-1:#2c3c4f;
+$color-lblue: #7bc4fa;
+
+$color-grey-1: #eff2f5;
+$color-grey-2: #9a9a9a;
+$color-grey-3: #f8f5ed;
+$color-grey-4: #90a3b9;
+$color-grey-5: #dfe5eb;
+$color-grey-6: #bfcad7;
+$color-grey-7: #cfd7e1;
+$color-grey-8: #afbdcd;
+
+
+
+$body-font-family: 'Heebo', sans-serif;
+$body-font-size: 16px;
+
+$heading-font-family: 'Merriweather', serif; 
+$button-font-family: 'Heebo', sans-serif;
+
+
+
+// FOUNDATION VARIABLES 
+$grid-container: 1470px;
+$grid-container-padding: 60px;
+
+$foundation-palette: (
+  primary: $color-primary,
+  secondary: $color-secondary,
+  success: $color-success,
+  warning: $color-warning,
+  alert: $color-alert,
+) !default;
+
+$button-background: $color-primary;
+$button-radius: 3px;
+$button-sizes: (
+    tiny: 0.6rem,
+    small: 0.75rem,
+    defaut: 14px, // default: 0.9rem,
+    large: 1.25rem
+) !default;
+$button-padding: 1.5em;
+$button-font-weight: 500 !default;
+
+$input-shadow: none;
+
+
+$breakpoints: (
+  small: 0px,
+  medium: 768px,
+  large: 1024px,
+  xlarge: 1600px,
+  xxlarge: 1921px,
+);
+
+$breakpoint-classes: (small medium large xlarge xxlarge);

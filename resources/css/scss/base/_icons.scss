@@ -1,0 +1,284 @@
+[class*="icn"] {
+	width: 32px;
+	height: 32px;
+	//margin-right: 5px;
+	margin-top: -2px;
+	display: inline-block;
+	vertical-align: middle;
+	font-style: normal;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+	z-index: 1;
+	&:before {
+		content: "";
+		background-repeat: no-repeat;
+		background-position: center;	
+		position: absolute;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;	
+	}
+	&.icn-phone {
+		&:before {
+			background-image: url(../img/icn-phone.svg); 
+		}
+		&.dark:before {
+			background-image: url(../img/icn-phone-dark.svg); 
+		}
+		&.light:before {
+			background-image: url(../img/icn-phone-light.svg); 
+		}
+
+		&.circle:before {
+			background-image: url(../img/icn-phone-circle.svg); 
+		}
+	}
+
+	&.icn-play:before {
+		background-image: url(../img/icn-play.svg);
+	}
+
+	&.icn-search:before {
+		background-image: url(../img/icn-search.svg);
+	}
+
+	&.icn-bag:before {
+		background-image: url(../img/icn-bag.svg);
+		background-size: auto 30px;
+	}
+
+	&.icn-cart:before {
+		background-image: url(../img/icn-cart.svg);
+	}
+	
+	&.icn-user {
+		&:before {
+			background-image: url(../img/icn-user.svg);
+			background-size: auto 30px;	
+		}	
+
+		&.circle:before {
+			background-image: url(../img/icn-user-circle.svg);
+			background-size: auto;	
+		}
+		&.circle-dark:before {
+			background-image: url(../img/icn-user-circle-b.svg);
+			background-size: auto;	
+		}
+		&.circle-light:before {
+			background-image: url(../img/icn-user-circle-w.svg);
+			background-size: auto;	
+		}
+	}
+
+	&.icn-arrow-l {
+		&:before {
+			background-image: url(../img/icn-arrow-l.svg);
+		}
+
+		&.red:before {
+			background-image: url(../img/icn-arrow-lr.svg);
+		}
+
+		&.white:before {
+			background-image: url(../img/icn-arrow-lw.svg);
+		}
+	}
+
+	&.icn-arrow-r {
+		&:before {
+			background-image: url(../img/icn-arrow-r.svg);
+		}
+
+		&.red:before {
+			background-image: url(../img/icn-arrow-rr.svg);
+		}
+
+		&.white:before {
+			background-image: url(../img/icn-arrow-rw.svg);
+		}
+	}
+
+	&.icn-cart {
+		
+	}
+
+	&.icn-write {
+		&:before {
+			background-image: url(../img/icn-write.svg);
+		}
+	}
+	
+
+}
+
+
+// Custom APT Icons
+[data-icon]:before {
+	font-family: "apt-icons" !important;
+	content: attr(data-icon);
+	font-style: normal !important;
+	font-weight: normal !important;
+	font-variant: normal !important;
+	text-transform: none !important;
+	speak: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	vertical-align: top;
+  }
+  
+  [class^="ai-"],
+  [class*=" ai-"] {
+	line-height: 1.2;
+	display: inline-block;
+	vertical-align: middle;
+  }
+  [class^="ai-"]:before,
+  [class*=" ai-"]:before {
+	font-family: "apt-icons" !important;
+	font-style: normal !important;
+	font-weight: normal !important;
+	font-variant: normal !important;
+	text-transform: none !important;
+	speak: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	vertical-align: top;
+  }
+  .ai-chev-down:before {
+	content: "\61";
+  }
+  .ai-chev-left:before {
+	content: "\62";
+  }
+  .ai-chev-right:before {
+	content: "\63";
+  }
+  .ai-arrow-down:before {
+	content: "\64";
+  }
+  .ai-arrow-left:before {
+	content: "\65";
+  }
+  .ai-arrow-right:before {
+	content: "\66";
+  }
+  .ai-arrow-up:before {
+	content: "\67";
+  }
+  .ai-chev-up:before {
+	content: "\68";
+  }
+  .ai-facebook:before {
+	content: "\70";
+  }
+  .ai-twitter:before {
+	content: "\71";
+  }
+  .ai-instagram:before {
+	content: "\72";
+  }
+  .ai-youtube:before {
+	content: "\73";
+  }
+  .ai-envelope:before {
+	content: "\74";
+  }
+  .ai-placepin:before {
+	content: "\75";
+  }
+  .ai-cart:before {
+	content: "\77";
+  }
+  .ai-classroom:before {
+	content: "\6a";
+  }
+  .ai-online:before {
+	content: "\6b";
+  }
+  .ai-zoom:before {
+	content: "\6c";
+  }
+  .ai-person:before {
+	content: "\69";
+  }
+  .ai-phone:before {
+	content: "\6e";
+  }
+  .ai-search:before {
+	content: "\6d";
+  }
+  .ai-gradcap:before {
+	content: "\6f";
+  }
+  .ai-triangle-down:before {
+	content: "\76";
+  }
+  .ai-triangle-left:before {
+	content: "\78";
+  }
+  .ai-triangle-right:before {
+	content: "\79";
+  }
+  .ai-triangle-up:before {
+	content: "\7a";
+  }
+  .ai-all-classes:before {
+	content: "\42";
+  }
+  .ai-language:before {
+	content: "\43";
+  }
+  .ai-logout:before {
+	content: "\44";
+  }
+  .ai-quizes:before {
+	content: "\47";
+  }
+  .ai-settings:before {
+	content: "\41";
+  }
+  .ai-heart-o:before {
+	content: "\45";
+  }
+  .ai-heart:before {
+	content: "\48";
+  }
+  .ai-certificate:before {
+	content: "\49";
+  }
+  .ai-clock:before {
+	content: "\4a";
+  }
+  .ai-quote-left:before {
+	content: "\50";
+  }
+  .ai-quote-right:before {
+	content: "\4e";
+  }
+  .ai-refund:before {
+	content: "\46";
+  }
+  .ai-warning:before {
+	content: "\4c";
+  }
+  .ai-cartp:before {
+	content: "\4f";
+  }
+  .ai-calendar-sq:before {
+	content: "\4b";
+  }
+  .ai-calendar-ch:before {
+	content: "\4d";
+  }
+  .ai-close:before {
+	content: "\52";
+  }
+  .ai-close-circle:before {
+	content: "\51";
+  }
+  
