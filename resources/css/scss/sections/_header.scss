@@ -43,64 +43,6 @@ header {
 				margin-top: 5px;
 			}
 			
-			.navmenu {
-				position: relative;
-				width: 50%;
-				border-top:1px solid $color-grey-1;
-
-				.menu {
-					margin-left: -30px;
-					flex-wrap: nowrap;
-				}
-
-				a {
-					font-size: 14px;
-					font-weight: bold;
-					text-transform: uppercase;
-					padding: 15px 30px;
-					line-height: 1;
-					color: lighten($color-black, 13.5%);
-					white-space: nowrap;
-
-					&:hover {
-						color: $color-primary;
-					}
-				}
-
-				.is-dropdown-submenu-parent {
-					> a {
-						padding-right: 40px;
-
-						&:after {
-							// border:0;
-							// border-right: 2px solid;
-							// border-bottom: 2px solid;
-							// width: 8px;
-							// height: 8px;
-							// transform: rotate(45deg);
-							// right: 20px;
-							// margin-top: -6px;
-							border:0;
-							background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='32' height='24' viewBox='0 0 32 24'><polygon points='0,0 32,0 16,24' style='fill: rgb%280, 0, 0%2'></polygon></svg>") no-repeat top center / 8px 8px;
-							width: 10px;
-							height: 10px;
-							margin-top: -5px;
-						}
-					}
-				}
-
-				.submenu {
-					padding: 10px 0;
-					li {
-						display: block;
-						a {
-							padding: 15px 20px;
-						}
-					}
-				} 
-
-			}
-			
 			.navutil {
 				position: relative;
 				width: calc(100% - 240px);
@@ -168,7 +110,6 @@ header {
 				//flex-flow: wrap;
 			}
 
-			.btn-search,
 			.btn-phone,
 			.btn-user, 
 			.btn-shop {
@@ -211,74 +152,6 @@ header {
 					font-weight: 400;
 					vertical-align: middle;
 					margin:0 0 0 5px;
-				}
-			}
-			
-
-			.searchbox { 
-				// margin:0 270px;
-				width: 100%;
-				
-				.input-group {
-					padding: 0 0 0 20px;
-					margin:0;
-				}
-
-				.ifields {
-					display: flex;
-					flex: 1;
-					> * {
-						margin-bottom: 0;
-					}
-				}
-
-				input, select {
-					height: 45px;
-					font-size: 14px;
-					padding: 10px 15px;
-				}
-				select {
-					padding-right: 25px;
-				}
-
-				.radio-drop {
-					width: 100%;
-					min-width:250px;
-
-					label span {
-						height: 43px;
-						padding: 10px 15px;
-						font: bold 16px  $heading-font-family;
-						text-overflow: ellipsis;
-						overflow: hidden;
-						
-						[class*="ai"] {
-							font-size: 20px;
-							vertical-align: middle;
-							margin-right: 5px;
-							color: $color-primary;
-						}
-					}
-					.radio-list {
-						background: darken($color-white, 4%);
-						border-radius: 3px 0 0 3px;
-						&:before {
-							top:17px;
-						}
-					}
-				}
-				.r0330 {
-					border-radius: 0 3px 3px 0;
-					overflow: hidden;
-				}
-
-				.button {
-					padding:0;
-					line-height: 1.2;
-					padding:13px 10px;
-					margin: 0 0 0 10px;
-					font-size: 14px;
-					color:lighten($color-black, 60%);
 				}
 			}
 

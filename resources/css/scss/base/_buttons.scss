@@ -8,7 +8,7 @@
     margin-bottom: 20px;
     line-height: 32px;
     transition:all 0.5s ease;
-    border-radius: 5px;
+    border-radius: 3px;
 
     &:hover {
         color: $color-white;
@@ -17,8 +17,9 @@
 
     &.disabled, &[disable] {
         opacity: 1 !important;
-        background: lighten($color-black, 88%) !important;
-        color: $color-white !important;
+        background: $color-white !important;
+        color: $color-grey-1 !important;
+        border:1px solid $color-grey-1 !important;
     }
     
     &.full, &.na {

@@ -20,7 +20,6 @@
         <div class="navbar grid-container clearfix">
             
             <div class="navutil"> 
-                <a class="btn-sign show-for-large" href="#">Agency Sign Up</a>
                 <a class="btn-phone" href="tel:480-322-1149"><i class="ai-phone"></i> 480-322-1149</a>  
                 <a class="btn-shop" href="#">
                     <i class="ai-cart"></i> shop <span class="badge">0</span>
@@ -37,89 +36,14 @@
                 </a>
             </div>
             
-            <div class="navright">
-                <nav class="navmenu show-for-large">
-                    <?php
-                        wp_nav_menu( array( 
-                            'theme_location' => 'header-menu',
-                            'menu'       => '',
-                            'container'  => '',
-                            'items_wrap' => '<ul class="menu dropdown" data-dropdown-menu>%3$s</ul>' 
-                        ));
-                    ?>
-                </nav>     
-
-                <div id="search" class="searchbox show-for-large" data-toggler=".show">
-                    <form action="">
-                        <div class="input-group">
-                            <div class="ifields">
-                                <div class="radio-drop"  id="drl" data-toggler=".show">
-                                    <div class="radio-list" data-toggle="drl">
-                                        <label>
-                                            <input type="radio" name="test" checked>  
-                                            <span><i class="ai-all-classes"></i> All courses</span> 
-                                        </label>
-                                        <label>
-                                            <input type="radio" name="test">  
-                                            <span><i class="ai-classroom"></i> Classroom Courses</span> 
-                                        </label>
-                                        <label>
-                                            <input type="radio" name="test">  
-                                            <span><i class="ai-online"></i> Online Courses</span> 
-                                        </label>
-                                        <label>
-                                            <input type="radio" name="test">  
-                                            <span><i class="ai-zoom"></i> Zoom Classes</span> 
-                                        </label>
-                                    </div>
-                                </div>
-                                <select>
-                                    <option value="">SELECT A COURSE</option>
-                                    <option value="Item #1">Item #1</option>
-                                    <option value="Item #2">Item #2</option>
-                                    <option value="Item #3">Item #3</option>
-                                </select>
-                                <select class="r0330">
-                                    <option value="">LOCATION</option>
-                                    <option value="Item #1">Item #1</option>
-                                    <option value="Item #2">Item #2</option>
-                                    <option value="Item #3">Item #3</option>
-                                </select>
-                            </div>
-                        </div>
-                    </form>
-                </div>    
+            <div class="navright">    
                 
                 <div class="mobutil">    
-                    <a class="btn-classes arrow hide-for-large" href="#">
-                        <i class="ai-gradcap"></i> All courses
-                    </a> 
-
                     <a class="btn-user arrow hide-for-large" href="#">
                         <i class="ai-person"></i> My Account
                     </a>  
                 </div>  
             </div>
-
-            <nav class="mobmenu">
-                <?php
-                    wp_nav_menu( array( 
-                        'theme_location' => 'mobile-menu',
-                        'menu'       => '',
-                        'container'  => '',
-                        'items_wrap' => '<ul class="menu accordion-menu" data-multi-open="false" data-accordion-menu data-submenu-toggle="true">%3$s</ul>' 
-                    ));
-                ?>
-            </nav>
-
-            <nav class="all-classes">
-                <h4>All Courses</h4>
-                <ul>
-                    <li><a href="#"><i class="ai-online"></i> Online Courses</a></li>
-                    <li><a href="#"><i class="ai-zoom"></i> Online Zoom Classes</a></li>
-                    <li><a href="#"><i class="ai-classroom"></i> Classroom Courses</a></li>
-                </ul>
-            </nav>
 
             <div class="my-account">
                 <div class="logreg-tabs">
