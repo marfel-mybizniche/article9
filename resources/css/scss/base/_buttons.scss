@@ -6,9 +6,10 @@
     font-weight: 500;
     text-transform: uppercase;
     margin-bottom: 20px;
-    line-height: 32px;
+    line-height: 26px;
     transition:all 0.5s ease;
     border-radius: 3px;
+    min-width: 240px;
 
     &:hover {
         color: $color-white;
@@ -278,14 +279,34 @@
 
     
     &.small {   
-        padding: 8px 14px;
-        font-size: 16px;
-        line-height: 25px;
-        min-height: 45px;
+        padding: 10px 20px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 26px;
     }
     &.large {   
         padding: 18px 40px;
         font-size: 20px;
+    }
+
+    i {
+        font-size: 22px;
+
+        &.circle {
+            width: 24px;
+            height: 24px;
+            font-size: 13px;
+            display: inline-block;
+            border-radius: 50%;
+            background: $color-secondary;
+            color: $color-white;
+            line-height: 24px;
+            text-align: center;
+
+            &:before {
+                vertical-align: middle;
+            }
+        }
     }
 
     .buttons & {

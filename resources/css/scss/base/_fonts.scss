@@ -213,7 +213,22 @@
 .ai-sound:before {
   content: "\32";
 }
-.ai-playnext:before {
+.ai-play-next:before {
   content: "\33";
+}
+.ai-edit:before {
+  content: "\58";
+}
+.ai-play:before {
+  content: "\36";
+}
+.ai-pause:before {
+  content: "\34";
+}
+.ai-to-start:before {
+  content: "\35";
+}
+.ai-to-end:before {
+  content: "\37";
 }
 

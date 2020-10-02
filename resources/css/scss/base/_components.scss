@@ -181,6 +181,19 @@
 	&.button {
 		border-radius: 50px;
 	}
+
+	&-0111 {
+		border-radius: 0 50px 50px 50px;
+	}
+	&-1011 {
+		border-radius: 50px 0 50px 50px;
+	}
+	&-1101 {
+		border-radius: 50px 50px 0 50px;
+	}
+	&-1110 {
+		border-radius: 50px 50px 50px 0;
+	}
 }
 
 //Pagination

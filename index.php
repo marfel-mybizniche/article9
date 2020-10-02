@@ -31,6 +31,11 @@
                         </div>
                     </div>
                 </div>
+                <div class="cell large-4">
+                    <aside class="article_side">
+                        
+                    </aside>
+                </div>
             </div>
         </div>
         <?php if(have_posts()): ?>
