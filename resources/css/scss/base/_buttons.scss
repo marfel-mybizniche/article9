@@ -19,8 +19,8 @@
     &.disabled, &[disable] {
         opacity: 1 !important;
         background: $color-white !important;
-        color: $color-grey-1 !important;
-        border:1px solid $color-grey-1 !important;
+        color: $color-light !important;
+        border:1px solid $color-light !important;
     }
     
     &.full, &.na {

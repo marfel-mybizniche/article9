@@ -3,18 +3,14 @@
 <section class="sec_article">
     <div class="grid-container">
 
-        <div class="article_top">
-            <a class="back_all" href=""><i class="ai-chev-left"></i>   Back to All Courses</a>
-            <div class="prev_next">
-                <a class="prev" href=""><i class="ai-triangle-left"></i> prev</a>
-                <a class="next" href="">next <i class="ai-triangle-right"></i></a>
-            </div>
+        <div class="article_back">
+            <a href=""><i class="ai-chev-left"></i>   Back to All Courses</a>
         </div>
 
         <div class="article_body">
             <div class="grid-x grid-margin-x">
-                <div class="cell large-8">
-                    <div class="article_item">
+                <div class="cell large-8 ">
+                    <div class="article_copy">
                         <h2 class="title">Article 9</h2>
                         <div class="author">A course by: Alison Pattison, EdD, is the Founder and Chief Executive Officer of Arizona Provider Training (APT).</div>
                         <ul class="info">
@@ -33,32 +29,45 @@
                 </div>
                 <div class="cell large-4">
                     <aside class="article_side">
-                        
+                        <div class="course_buy">
+                            <div class="price">
+                                <small>Price:</small>
+                                US$ 20.00
+                                <span>65% Disc. US$ 40.00</span>
+                            </div>
+                            <div class="buy">
+                                <a href="#" class="button secondary expanded">
+                                    <i class="ai-cartp"></i> Buy This COurse
+                                </a>
+                            </div>
+                            <p>Already have this course? <a href="#">Login now to access</a></p>
+                        </div>
+                        <div class="course_info">
+                            <ul>
+                                <li><i class="ai-certificate"></i> 1 CEU</li>
+                                <li><i class="ai-filmstripe"></i> 17 Lessons</li>
+                                <li><i class="ai-clock"></i> 1 h 52m</li>
+                            </ul>
+                        </div>
+                        <div class="course_contents">
+                            <ul>
+                                <li class="done"><a href="#">Disclaimer</a></li>
+                                <li class="active"><a href="#">What You Will Learn</a></li>
+                                <li>Key Terms</li>
+                                <li>Who Must Follow Article 9</li>
+                                <li>History</li>
+                            </ul>
+                        </div>
                     </aside>
                 </div>
             </div>
         </div>
         <?php if(have_posts()): ?>
             <?php while(have_posts()): the_post() ?>
-                <?php the_content() ?>
+                <?php //the_content() ?>
             <?php endwhile ?>
         <?php endif ?>
     </div>
 </section>
-<div>
-    <a href="#" class="button secondary"><i class="ai-cartp"></i> Buy This COurse</a>    
-</div>
-<div>
-    <a href="#" class="button secondary disabled"><i class="ai-cartp"></i> Buy This COurse</a>    
-</div>
-<div>
-    <a href="#" class="button dark">Start Next Lesson</a>    
-</div>
-<div>
-    <a href="#" class="button hollow">Buy This COurse</a>    
-</div>
-<div>
-    <a href="#" class="button warning hollow">Buy This COurse</a>    
-</div>
 
 <?php get_footer() ?>
