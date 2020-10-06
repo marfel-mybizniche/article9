@@ -25,9 +25,14 @@
     }
 
     .article_copy {
-        padding:0 0 0 50px;
-        .info {
-            margin:0;
+        padding:0 0 0 50px; 
+
+        .course_author {
+            margin-bottom: 10px;
+        }
+
+        .course_info {
+            margin:0 0 35px;
             padding:0;
             display: flex;
             flex-flow: wrap;
@@ -43,57 +48,199 @@
                 }
             }
         }
+
+        .course_video {
+            position: relative;
+            margin:0 0 35px;
+
+            .btn-play {
+                margin: 0;
+            }
+        }
+
+        .course_desc {
+            h3 {
+                font-size: 18px;
+                border-bottom: 1px solid $color-grey-7;
+                padding:0 0 10px;
+            }
+        }
     }
 
     .article_side {
         padding:0 35px;
-    }
-    .course_info {
+    
 
-    }
+        .course_buy {
+            text-align: center;
 
-    .course_contents {
-        ul {
-            margin:0;
-            padding:0;
-            li {
-                list-style: none;
-                color: $color-grey-6;
-                cursor: default;
-
-                &:before {
-                    font-family: "apt-icons";
-                    content: "\5a";
+            .price {
+                display: block;
+                color: $color-dark;
+                margin-bottom: 10px;
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 1;
+                
+                small {
+                    font-size: 14px;
+                    font-weight: normal;
                 }
 
-                a {
-                    display: block;
-                    padding:0;
-                    color: $color-grey-6;       
-                    
+                ins {
+                    font-size: 14px;
+                    color: $color-alert;
+                    text-decoration: none;
+                }
+            }
+
+            .button {
+                margin:0 0 10px;
+            }
+
+        }
+
+        .course_info {
+            ul {
+                margin:0;
+                padding:0;
+
+                li {
+                    list-style: none;
+                    color: $color-dblue-1;
+                    overflow: hidden;
+                    line-height: 1;
+                    margin:0 0 10px; 
+                    position: relative;
+                    padding: 2px 0 2px 30px;
+
+                    i {
+                        position: absolute;
+                        left: 0;
+                        top:0;
+                        color: $color-dark;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+
+        .course_timeline {
+            border-top:1px solid $color-grey-5;
+            border-bottom:1px solid $color-grey-5;
+            margin: 25px 0;
+            padding: 25px 0;
+
+            .scroller {
+
+            }
+
+            ul {
+                margin:0;
+                padding:0;
+                li {
+                    list-style: none;
+                    color: $color-grey-6;
+                    cursor: default;
+                    position: relative;
+                    padding:10px 75px 10px 35px;
+                    border: 1px solid transparent;
+                    margin:0 0 5px;
+                    border-radius: 5px;
+                    line-height: 1;
+
+                    &:hover {
+                        border: 1px solid $color-grey-5;
+                        background: $color-grey-1;
+                    }
+
                     &:before {
                         font-family: "apt-icons";
-                        content: "\31";
-                    }  
-                }
-
-                &.active {
-                    &:before {
-                        display: none;
+                        content: "\5a";
+                        position: absolute;
+                        left: 10px;
+                        font-size: 18px;
+                        line-height: 1;
+                        top: 8px;
                     }
+
                     a {
-                        color: $color-dblue-1;
+                        display: block;
+                        padding:10px 0 10px 35px;
+                        color: $color-grey-6;      
+                        position: relative; 
+                        line-height: 1;
+                        
+                        &:before {
+                            font-family: "apt-icons";
+                            content: "\31";
+                            position: absolute;
+                            left: 10px;
+                            line-height: 1;
+                            font-size: 15px;
+                            top: 10px;
+                        }  
                     }
-                }
 
-                &.done {
-                    &:before {
-                        display: none;
+                    &.active {
+                        padding:0 75px 0 0;
+                        &:before {
+                            display: none;
+                        }
+                        a {
+                            color: $color-dblue-1;
+                        }
                     }
-                    a { 
-                        color: $color-grey-9; 
-                    }                 
+
+                    &.done {
+                        padding:0 75px 0 0;
+                        &:before {
+                        position: absolute;
+                        left: 0;
+                            display: none;
+                        }
+                        a { 
+                            color: $color-grey-9; 
+                        }                 
+                    }
+
+                    .time {
+                        position: absolute;
+                        right: 0;
+                        top:10px;
+                        width: 55px;
+                        font-size: 14px;
+
+                        &:after {
+                            content: "\63";
+                            font-family: "apt-icons";
+                            position: absolute;
+                            font-size: 14px;
+                            right: 10px;
+                        }
+                    }
                 }
+            }
+        }
+
+        .course_author {
+            font-size: 14px;
+            p {
+                img, .img {
+                    float: right;
+                    margin:0 0 0 15px;
+                    width: 45px;
+                    height: 45px;
+                    border-radius: 50%;
+                }
+            }
+        }
+        
+        .course_support {
+            .button {
+                width: 290px;
+                max-width: 100%;
+                text-align: left;
             }
         }
     }

@@ -19,7 +19,7 @@
     <div class="hsnav-s9 sticky" data-sticky data-options="marginTop:0">
         <div class="navbar grid-container clearfix">
             
-            <div class="navutil"> 
+            <!-- <div class="navutil"> 
                 <a class="btn-phone" href="tel:480-322-1149"><i class="ai-phone"></i> 480-322-1149</a>  
                 <a class="btn-shop" href="#">
                     <i class="ai-cart"></i> shop <span class="badge">0</span>
@@ -27,10 +27,9 @@
                 <a class="btn-user show-for-large" href="#">
                     <i class="ai-person"></i> account
                 </a>                         
-            </div>
+            </div> -->
 
             <div class="navleft">
-                <span class="navicon hide-for-large" data-toggle="header">mobile menu</span>  
                 <a class="navlogo" href="<?php echo get_home_url(); ?>">
                     <img src="<?php echo MBN_ASSETS_URI ?>/img/logo.png" alt="">
                 </a>
@@ -38,11 +37,19 @@
             
             <div class="navright">    
                 
-                <div class="mobutil">    
+                <!-- <div class="mobutil">    
                     <a class="btn-user arrow hide-for-large" href="#">
                         <i class="ai-person"></i> My Account
                     </a>  
-                </div>  
+                </div>   -->
+                
+                <a class="btn-phone" href="tel:480-322-1149"><i class="ai-phone"></i> 480-322-1149</a>  
+                <a class="btn-shop" href="#">
+                    <i class="ai-cart"></i> shop <span class="badge">0</span>
+                </a>   
+                <a class="btn-user" href="#">
+                    <i class="ai-person"></i> account
+                </a>  
             </div>
 
             <div class="my-account">

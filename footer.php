@@ -4,13 +4,13 @@
     <div class="grid-container">
         <div class="foottop">
             <div class="grid-x grid-margin-x">
-                <div class="cell medium-7 large-8 foot_col1">
+                <div class="cell medium-7 large-6 foot_col1">
                     <div class="foot_logo">
                         <a href="<?php echo get_home_url(); ?>"><img src="<?php echo MBN_ASSETS_URI ?>/img/logo-w.png" alt=""></a>
                         <h3>APT is the leading certification and training company.</h3>
                     </div>
                 </div>
-                <div class="cell medium-5 large-4 foot_col2">
+                <div class="cell medium-5 large-4 large-offset-2 foot_col2">
                     <div class="foot_contact">
                         <ul>
                             <li><a href="mailto:customerservice@ap.training"><i class="ai-envelope"></i> customerservice@ap.training</a></li>

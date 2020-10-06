@@ -42,54 +42,6 @@ header {
 				width: 165px;
 				margin-top: 5px;
 			}
-			
-			.navutil {
-				position: relative;
-				width: calc(100% - 240px);
-				text-align: right;
-				float: right;
-
-				a {
-					display: inline-block;
-					vertical-align: middle;
-					padding: 0 10px;
-					font-size: 16px;
-					font-weight: bold;
-					text-transform: uppercase;
-					color: $color-grey;
-
-					&:hover {
-						color: $color-primary;
-					}
-					
-					[class*=ai] {
-						color: $color-primary;
-					}
-					
-				}
-
-				.btn-search,  .btn-user, .btn-shop  {
-					font-size: 0;;
-				}
-
-				.btn-user {
-					padding:0;
-					margin:-2px 0 0 10px;
-					border:1px solid $color-grey-1;
-					border-radius: 50%;
-					width: 28px;
-					height: 28px;
-					line-height: 26px;
-					text-align: center;
-
-					[class*=ai] {
-						color: $color-primary;
-						font-size: 18px;
-					}
-				}
-				
-
-			}
 
 			.navleft {
 				float: left;
@@ -105,9 +57,9 @@ header {
 				width: calc(100% - 240px);
 				display: flex;
 				padding:6px 0 0;
-				// width: 45%; 
-				//height: 110px;
-				//flex-flow: wrap;
+				align-items: center;
+				min-height: 65px;
+				justify-content: flex-end;
 			}
 
 			.btn-phone,
@@ -115,8 +67,7 @@ header {
 			.btn-shop {
 				display: inline-block;
 				vertical-align: middle;
-				font-size: 0;
-				margin: 0;
+				margin: 0 10px;
 
 				[class*=ai] {
 					font-size: 22px;
@@ -129,9 +80,13 @@ header {
 					}
 				}
 			}
+			.btn-user, .btn-shop  {
+				font-size: 0;
+			}
 
 			.btn-phone {
 				color: $color-grey;
+				font-weight: 500;
 				[class*=ai] {
 					color: $color-primary;
 				}
@@ -152,6 +107,22 @@ header {
 					font-weight: 400;
 					vertical-align: middle;
 					margin:0 0 0 5px;
+				}
+			}
+			
+			.btn-user {
+				padding:0;
+				margin:-2px 0 0 10px;
+				border:1px solid $color-grey-1;
+				border-radius: 50%;
+				width: 28px;
+				height: 28px;
+				line-height: 26px;
+				text-align: center;
+
+				[class*=ai] {
+					color: $color-primary;
+					font-size: 18px;
 				}
 			}
 
@@ -213,111 +184,6 @@ header {
 
 			}		
 
-			.mobmenu {
-				position: fixed;
-				top: -101vh;
-				
-				left:0;
-				right:0;
-				transition:all 0.5s ease;
-				overflow: auto;
-				background: $color-grey-3;
-				z-index: 9998;
-				padding: 30px;
-				box-shadow: 5px 0 6px 0 rgba($color-black, 0.1);
-
-				ul {
-					display: block;
-					margin: 0;
-					padding:10px 0; 
-					width: 100%;
-
-					li {
-						text-align: left;
-						display: block;
-						margin: 0 0 20px;
-						
-
-						a {
-							font:bold 18px $heading-font-family; 
-							line-height: 1.1; 
-							color: $color-grey; 
-							padding:8px 0; 
-							position: relative;
-							border-bottom: 1px solid lighten($color-black, 90%);
-
-							&:before {
-								position: absolute; 
-								left: 25px; 
-								top:50%; 
-								margin-top:-22px; 
-							}
-						}
-						ul {
-							margin: 0;
-							padding: 0;
-							li {
-								margin:0;
-								border:0;
-								a {
-									font:500 14px $body-font-family;
-									padding:6px 0;
-									text-transform: none; 
-									text-align: left;  
-									border:0;
-
-									i {
-										color: $color-primary;
-										font-size: 25px;
-										vertical-align: middle;
-										line-height: 1;
-										display: inline-block;
-										margin-right: 5px;
-									}
-								}
-							}
-						}
-
-						&.courses {
-							a {
-								font-size: 16px;
-							}
-						}
-					}
-				}
-				
-				.has-submenu-toggle > a {
-					margin-right: 0;
-				}
-
-				.submenu-toggle {
-					width:40px; 
-					height: 34px; 
-					right: 0;
-
-					&:before {
-						content: "\002B";
-						font-weight: 200;
-						font-size: 20px;
-					}
-					&:after {
-						content: ""; border:0;
-					}
-
-					&[aria-expanded="true"] {
-						&:before {
-							content: "\02014";
-							color: $color-primary;
-						}
-					}
-				}
-				
-				@at-root header.show-menu .hsnav-s9 .mobmenu {
-					display: block;
-					top: 100px;
-				}
-			}
-
 			.my-account {
 				background: $color-grey-3;
 				position: absolute;
@@ -340,7 +206,7 @@ header {
 				
 				@at-root header.show-account  .navbar .my-account {
 					display: block;
-					top: 50px;
+					top: 70px;
 				}
 				
 				h3 {
@@ -462,215 +328,11 @@ header {
 
 			}
 
-			.all-classes {
-				background: $color-grey-3;
-				position: absolute;
-				left: 0;
-				right: 0;
-				top:-100vh;
-				padding: 20px 30px;
-				overflow: auto;
-				max-height: calc(100vh - 100px);
-				
-				@at-root header.show-classes  .navbar .all-classes {
-					display: block;
-					top: 100px;
-				}
-				h4 {
-					font-size: 18px;
-					border-bottom: 1px solid $color-grey-1;
-					color: $color-primary;
-					margin: 0 0 10px;
-					padding: 0 0 10px;
-				}
-				ul {
-					margin:0;
-					padding:0;
 
-					li {
-						list-style: none;
-						margin:0;
-						padding:0;
-						font-size: 16px;
-
-						a {
-							font-weight: 500;
-							color:$color-black;
-							display: block;
-							padding: 5px 0;
-
-							i {
-								font-size: 25px;
-								display: inline-block;
-								vertical-align: middle;
-								color: $color-primary;
-								line-height: .8;
-								margin: 0 5px 0 0;
-							}
-						}
-					}
-				}
-			}
-
-
-			@include media(max-width, 1366px) {
-
-				.navmenu {
-					a {
-						padding-left: 15px;
-						padding-right: 15px;
-						font-size: 13px;
-					}
-
-					.is-dropdown-submenu-parent > a {
-						padding-right: 25px;
-					}
-
-					.menu {
-						margin-left: -15px;
-						flex-wrap: nowrap;
-
-						li {
-							width: 100%;
-						}
-					}
-				}
-				.searchbox {
-					.radio-drop {
-						min-width: 190px;
-
-						label span {
-							font-size: 14px;
-						}
-					}
-
-					select, input {
-						font-size: 13px;
-					}
-				}
-
-				.navright {
-					width: calc(100% - 200px);
-				}
-
-			}
 
 			@include media(max-width, 1023px) {
 
-				padding:0;
 
-				.navlogo {
-					width: 110px;
-					margin-left: 20px;
-					margin-top: 0;
-				}
-
-				.navutil {
-					float: none;
-					width: auto;
-					background: $color-primary;
-					padding:8px;
-					min-height: 40px;
-
-					a {
-						color:  $color-white !important;
-
-						[class*="ai"] {
-							color: $color-white;
-						}
-					}
-					.btn-phone {
-						float: left;
-					}
-				}
-
-				.navright {
-					width: calc(100% - 230px);
-					justify-content: right;
-					padding:0;
-				}
-
-				.btn-shop {
-
-					.badge {
-						background: $color-warning;
-					}
-				}
-
-				.mobutil {
-					display: flex;
-					a {
-						display: block;
-						width: 70px;
-						height: 60px;
-						font-size: 0;
-						display: inline-block;
-						line-height: 60px;
-						text-align: center;
-						padding: 0 0 0 10px;
-						position: relative;
-
-						&:after {
-							content: "";
-							position: absolute;
-							left: 0;
-							top:15px;
-							bottom: 15px;
-							border-left: 1px solid $color-black;
-							opacity: 0.1;
-						}
-
-						&.arrow {
-							&:before {
-								content: "";
-								background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='32' height='24' viewBox='0 0 32 24'><polygon points='0,0 32,0 16,24' style='fill: rgb(154, 154, 154)'></polygon></svg>") no-repeat top center / 7px 7px;
-								width: 8px;
-								height: 8px;
-								margin-top: -5px;
-								position: absolute;
-								left: 8px;
-								top:50%;
-							}
-						}
-						
-
-						[class*="ai"] {
-							font-size: 18px;
-							line-height: 1;
-							display: inline-block;
-							vertical-align: middle;
-							width: 32px;
-							height: 32px;
-							border-radius: 50%;
-							border:1px solid;
-							line-height: 28px;
-
-							&:before {
-								vertical-align: middle;
-							}
-						}
-					}
-					
-					@at-root header.show-classes .navbar .mobutil .btn-classes {
-						background: #de3f5a;
-						color:$color-white;
-
-						&.arrow:before {
-							background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='32' height='24' viewBox='0 0 32 24'><polygon points='0,0 32,0 16,24' style='fill: rgb(255, 255, 255)'></polygon></svg>") no-repeat top center/7px 7px;
-							transform: rotate(180deg);
-						}
-					}
-
-					@at-root header.show-account .navbar .mobutil .btn-user {
-						background: #de3f5a;
-						color:$color-white;
-
-						&.arrow:before {
-							background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='32' height='24' viewBox='0 0 32 24'><polygon points='0,0 32,0 16,24' style='fill: rgb(255, 255, 255)'></polygon></svg>") no-repeat top center/7px 7px;
-							transform: rotate(180deg);
-						}
-					}
-				}
 
 				.my-account {
 					left: 0;
