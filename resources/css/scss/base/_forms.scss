@@ -154,7 +154,7 @@ select {
 .custom-radio {
     label {
         position: relative;
-        padding: 0 40px 0 45px;
+        padding: 0 40px 0 30px;
         min-height: 30px;
         input {
             position: absolute;
@@ -167,25 +167,25 @@ select {
                 line-height: 1.2;
                 &:before {
                     content: "";
-                    width: 30px;
-                    height: 30px;
-                    border:1px solid $color-light;
+                    width: 18px;
+                    height: 18px;
+                    border:2px solid $color-grey-7;
                     border-radius: 50%;
                     position: absolute;
-                    left: 0;
-                    top:0;
+                    left: 4px;
+                    top:4px;
                 }
             }
             &:checked + span {
                 &:after {
                     content: "";
-                    width: 15px;
-                    height: 15px;
+                    width: 18px;
+                    height: 18px;
                     border-radius: 50%;
-                    background: $color-primary;
+                    background: $color-secondary;
                     position: absolute;
-                    top:7px;
-                    left: 7px;
+                    top:4px;
+                    left: 4px;
                 }
             }
         }

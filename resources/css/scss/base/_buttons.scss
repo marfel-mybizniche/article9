@@ -21,20 +21,41 @@
         line-height: 1;
         margin-right: 10px;
 
-        &.circle {
+        &.circle, &.circle-dark, 
+        &.circle-grey, &.circle-warning {
             width: 24px;
             height: 24px;
-            font-size: 13px;
+            line-height: 22px;
+            font-size: 12px;
             display: inline-block;
             border-radius: 50%;
             background: $color-secondary;
             color: $color-white;
-            line-height: 24px;
             text-align: center;
+            margin-top: -2px;
 
             &:before {
                 vertical-align: middle;
             }
+            &-dark {
+                background: $color-dark;
+            }
+            &-warning {
+                background: $color-warning;
+            }
+        }
+
+        &.circle-dark {
+            background: $color-dark;
+        }
+        
+        &.circle-grey {
+            background: $color-grey;
+        }
+
+        &.right{
+            margin-right: -5px;
+            margin-left: 10px;
         }
     }
 
@@ -43,6 +64,10 @@
         background: $color-white !important;
         color: $color-light !important;
         border:1px solid $color-light !important;
+
+        i {
+            background: $color-light !important;
+        }
     }
     
     &.full, &.na {
@@ -110,7 +135,7 @@
         &:hover {
             color: $color-white;
             background: lighten($color-warning, 10%);
-        }    
+        }   
     }
 
     &.success {
@@ -284,9 +309,36 @@
         font-weight: 500;
         line-height: 26px;
     }
+
     &.large {   
         padding: 18px 40px;
         font-size: 20px;
+    }
+
+    &.download {
+        i {
+            font-size: 16px;
+            color: $color-dark;
+        }
+
+        &:hover {
+            i {
+                color: $color-white;
+            }
+        }
+    }
+
+    small {
+        display: inline-block;
+        font-size: 13px;
+        line-height: 1;
+        vertical-align: middle;
+        text-align: left;
+
+        s {
+            text-decoration: none;
+            color: $color-dark; 
+        }
     }
 
     .buttons & {
@@ -298,9 +350,14 @@
         margin-bottom: 0;
     }
 
+    .nomin {
+        min-width: 1px;
+    }
+
     @include media(max-width, 480px) {
         padding: 10px 20px;
     }
+    
 } 
 
 

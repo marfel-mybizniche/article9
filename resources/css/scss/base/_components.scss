@@ -1,83 +1,3 @@
-//Label Overrides
-.label {
-	font-size: 14px;
-	font-weight: 500;
-	text-transform: uppercase;
-	padding:9px 15px 8px;
-	line-height: 1;
-
-	&.success {
-		color: $color-white;
-	}
-
-	&.warning {
-		color: $color-white;
-	}
-}
-
-// Slick Custom button
-.slick-slider {
-	position: relative;
-	padding-left: 50px;
-	padding-right: 50px;
-
-	.slick-arrow {
-		width: 30px;
-		height: 30px;
-		font-size: 0;
-		cursor: pointer;
-		opacity: 0.3;
-		border:0 !important;
-
-		position: absolute;
-		top:50%;
-		transform:translate(0, -50%);
-
-		&:hover {
-			opacity: 1;
-		}
-		&:focus {
-			border:0;
-		}
-	}
-	.slick-prev {
-		left:10px;
-		background: url(../img/icn-chev-left.svg) no-repeat center;
-	}
-	.slick-next {
-		right: 10px;
-		background: url(../img/icn-chev-right.svg) no-repeat center;
-	}
-}
-
-
-// Slick Custom dots
-.slick-dots {
-	margin:0;
-	padding:0;
-
-	li {
-		list-style: none;
-		display: inline-block;
-		margin:0 5px;
-
-		button {
-			font-size: 0;
-			width: 12px;
-			height: 12px;
-			border-radius: 50%;
-			background: $color-black;
-			cursor: pointer;
-		}
-
-		&.slick-active {
-			button {
-				background: $color-primary;
-			}
-		}
-	}
-}
-
 
 // Custom pager
 .pager {
@@ -137,7 +57,7 @@
 	}
 }
 
-
+//Circle list inside copy
 .circle-list {
 	margin:0 0 30px;
 	padding:0;
@@ -163,38 +83,6 @@
 	}
 }
 
-
-//Radius button and label
-.radius {
-	border-radius: 10px;
-
-	&.button {
-		border-radius: 10px;
-	}
-}
-
-
-//Round button and label
-.round {
-	border-radius: 30px;
-
-	&.button {
-		border-radius: 30px;
-	}
-
-	&-0111 {
-		border-radius: 2px 20px 20px 20px;
-	}
-	&-1011 {
-		border-radius: 20px 2px 20px 20px;
-	} 
-	&-1101 {
-		border-radius: 20px 20px 2px 20px;
-	}
-	&-1110 {
-		border-radius: 20px 20px 20px 2px;
-	}
-}
 
 //Pagination
 .pagination {
@@ -360,7 +248,6 @@ ul.custom_dropdown {
 
 
 //Date range picker inline
-
 .daterangepicker {
 	th, td {
 		font:16px $body-font-family;
@@ -433,5 +320,40 @@ ul.custom_dropdown {
 				}
 			}
 		}
+	}
+}
+
+
+
+
+//Radius button and label
+.radius {
+	border-radius: 10px;
+
+	&.button {
+		border-radius: 10px;
+	}
+}
+
+
+//Round button and label
+.round {
+	border-radius: 30px;
+
+	&.button {
+		border-radius: 30px;
+	}
+
+	&-0111 {
+		border-radius: 2px 20px 20px 20px;
+	}
+	&-1011 {
+		border-radius: 20px 2px 20px 20px;
+	} 
+	&-1101 {
+		border-radius: 20px 20px 2px 20px;
+	}
+	&-1110 {
+		border-radius: 20px 20px 20px 2px;
 	}
 }

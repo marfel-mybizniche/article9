@@ -34,8 +34,9 @@
         }
         h3 {
             line-height: 1.6;
-            margin:0 0 40px;
+            margin:0 0 40px 30px;
             font-weight: 400;
+            max-width: 390px;
         }
     }
 
@@ -104,6 +105,11 @@
                 }
             }
         }
+    }
+
+    .copyright {
+        float: left;
+        margin-right: 70px;
     }
 
     .designby {
