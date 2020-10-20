@@ -26,7 +26,7 @@
                                     <i class="ai-edit circle"></i> 
                                     <small>Start Quiz: <br><s>DIsclaimer</s></small>
                                 </a>
-                                <a href="#" class="button dark clear">
+                                <a href="#" class="button dark clear nomin">
                                     <i class="ai-play circle-grey"></i> Watch Again
                                 </a>
                             </div>
@@ -46,7 +46,7 @@
                     <aside class="article_side">
                         <div class="course_start">
                             <a href="#" class="button secondary hollow expanded">
-                                <i class="ai-cartp"></i> 
+                                <i class="ai-edit circle"></i> 
                                 <small>Start Quiz: <br><s>DIsclaimer</s></small>
                             </a>
                         </div>
@@ -59,6 +59,7 @@
                                 <li><i class="ai-infinity"></i> Unlimited access forever</li>
                             </ul>
                         </div>
+                        <hr>
                         <div class="course_timeline">
                             <h5>Course contents</h5>
                             <div class="scroller">
@@ -71,6 +72,7 @@
                                 </ul>
                             </div>
                         </div>
+                        <hr>
                         <div class="course_author">
                             <p><img src="<?php echo MBN_ASSETS_URI ?>/img/img-profile.jpg" alt="">  A course by: <strong>Alison Pattison</strong>, EdD, is the Founder and Chief Executive Officer of Arizona Provider Training (APT).</p> 
                         </div>
@@ -82,11 +84,6 @@
                 </div>
             </div>
         </div>
-        <?php if(have_posts()): ?>
-            <?php while(have_posts()): the_post() ?>
-                <?php //the_content() ?>
-            <?php endwhile ?>
-        <?php endif ?>
     </div>
 </section>
 

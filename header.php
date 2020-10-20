@@ -18,16 +18,6 @@
 <header id="header" class="header" data-sticky-container data-toggler=".show-menu">
     <div class="hsnav-s9 sticky" data-sticky data-options="marginTop:0">
         <div class="navbar grid-container clearfix">
-            
-            <!-- <div class="navutil"> 
-                <a class="btn-phone" href="tel:480-322-1149"><i class="ai-phone"></i> 480-322-1149</a>  
-                <a class="btn-shop" href="#">
-                    <i class="ai-cart"></i> shop <span class="badge">0</span>
-                </a>   
-                <a class="btn-user show-for-large" href="#">
-                    <i class="ai-person"></i> account
-                </a>                         
-            </div> -->
 
             <div class="navleft">
                 <a class="navlogo" href="<?php echo get_home_url(); ?>">
@@ -36,12 +26,6 @@
             </div>
             
             <div class="navright">    
-                
-                <!-- <div class="mobutil">    
-                    <a class="btn-user arrow hide-for-large" href="#">
-                        <i class="ai-person"></i> My Account
-                    </a>  
-                </div>   -->
                 
                 <a class="btn-phone" href="tel:480-322-1149"><i class="ai-phone"></i> 480-322-1149</a>  
                 <a class="btn-shop" href="#">

@@ -23,7 +23,7 @@
         </div>
         <div class="footbot">
             <div class="grid-x grid-margin-x">
-                <div class="cell medium-5 large-4 large-order-2">
+                <div class="cell large-5 xlarge-4 xlarge-order-2">
                     <div class="follow_us">
                         <h5>FOllow Us</h5>
                         <ul>
@@ -54,7 +54,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="cell medium-7 large-8 large-order-1 ">
+                <div class="cell large-7 xlarge-8 xlarge-order-1 ">
                     <div class="copyright">Copyright <?php echo date('Y'); ?> &copy; APT. ALL Rights Reserved.</div>
                     <div class="designby"><a href="https://www.mybizniche.com/phoenix-web-design/" target="_blank">Website Design</a> by: My Biz Niche</div>
                 </div>

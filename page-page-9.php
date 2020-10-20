@@ -16,14 +16,14 @@
                         <hr>
                         <div class="course_timer">
                             <small>Exam Time Remaining</small>
-                            <span>00:29:59</span>
+                            <span class="ff-oswald text-primary">00:29:59</span>
                         </div>
-                        <h3 class="fw-light text-primary">Final Examination</h3>
+                        <h3 class="fw-light text-primary ff-roboto">Final Examination</h3>
                         <ul class="course_info">
                             <li class="na"><i class="ai-clock"></i> 30mins</li>
                         </ul>
-                        <div class="course_quiz final">
-                            <h3 class="fw-light">Question 2 of 2</h3>
+                        <div class="course_quiz clearfix border min">
+                            <h3 class="fw-light ff-roboto">Question 2 of 2</h3>
                             <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur? Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum?</p>
                             <ul class="quiz_choices">
                                 <li class="custom-radio">
@@ -55,7 +55,7 @@
                                 <div class="float-left">
                                 </div>
                                 <div class="float-right">
-                                <a href="#" class="button secondary disabled"><i class="ai-clock"></i> Next</a>
+                                <a href="#" class="button secondary  disabled"><i class="ai-to-end circle"></i> Next</a>
                                 </div>
                             </div>
                         </div>
@@ -63,9 +63,20 @@
                 </div>
                 <div class="cell large-4">
                     <aside class="article_side">
-                        <div class="course_timeline">
-                            <h5>Course contents</h5>
+                        <div class="course_progress">
+                            <h5>Exam progress</h5>
+                            <div class="progress_box">
+                                <div class="range">
+                                    <span class="handle"></span>
+                                    <span class="fill"></span>
+                                </div>   
+                                <div class="output">
+                                    <div class="left">50% Complete</div>
+                                    <div class="right"><span>1</span> / 2</div>
+                                </div>
+                            </div>
                         </div>
+                        <hr>
                         <div class="course_author">
                             <p><img src="<?php echo MBN_ASSETS_URI ?>/img/img-profile.jpg" alt="">  A course by: Alison Pattison, EdD, is the Founder and Chief Executive Officer of Arizona Provider Training (APT).</p> 
                         </div>

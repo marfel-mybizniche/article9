@@ -95,6 +95,7 @@ header {
 			.btn-shop {
 				position: relative;
 				font-size: 0;
+				white-space: nowrap;
 
 				.badge {
 					background: $color-grey;
@@ -328,11 +329,7 @@ header {
 
 			}
 
-
-
 			@include media(max-width, 1023px) {
-
-
 
 				.my-account {
 					left: 0;
@@ -351,6 +348,11 @@ header {
 					}
 				}
 				
+			}
+			@include media(max-width, 639px) {
+				.btn-phone {
+					font-size: 0;
+				}
 			}
 		}
 

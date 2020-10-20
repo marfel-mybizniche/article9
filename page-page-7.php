@@ -60,6 +60,7 @@
                                 <li><i class="ai-infinity"></i> Unlimited access forever</li>
                             </ul>
                         </div>
+                        <hr>
                         <div class="course_timeline">
                             <h5>Course contents</h5>
                             <div class="scroller">
@@ -72,6 +73,7 @@
                                 </ul>
                             </div>
                         </div>
+                        <hr>
                         <div class="course_author">
                             <p><img src="<?php echo MBN_ASSETS_URI ?>/img/img-profile.jpg" alt="">  A course by: Alison Pattison, EdD, is the Founder and Chief Executive Officer of Arizona Provider Training (APT).</p> 
                         </div>

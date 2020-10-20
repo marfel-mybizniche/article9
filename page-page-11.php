@@ -18,11 +18,25 @@
                         <ul class="course_info">
                             <li class="na"><i class="ai-clock"></i> 30mins</li>
                         </ul>
-                        <div class="course_quiz clearfix border min">
-                            <div class="please_wait">
-                                <img src="<?php echo MBN_ASSETS_URI ?>/img/ajax-loader.gif" alt=""><br>
-                                Please Wait.<br>
-                                We are calculating your score..
+                        <div class="course_quiz clearfix border">
+                            <h3 class="fw-light  ff-roboto">Congratulations!</h3>
+                            <p><strong>You have passed the Article 9 course.</strong> 18 out of 20 questions answered correctly in  22mins 48secs ad minim veniam, quis nostrud exercitation ullamco duis aute irure dolor in reprehenderiur.</p>
+                            <div class="course_cert">
+                                <div class="left">
+                                    <div class="cert_by">
+                                        <img class="logo" src="<?php echo MBN_ASSETS_URI ?>/img/logo-w.png" alt="" width="66">
+                                        <h3>Article 9 Certified</h3>     
+                                    </div>
+                                    <div class="cert_to">
+                                        Presented to: John Doe Little
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <div class="cert_place">
+                                        90<sup>TH</sup>
+                                        <small>PERCENTILE</small>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -34,11 +48,11 @@
                             <div class="progress_box">
                                 <div class="range">
                                     <span class="handle"></span>
-                                    <span class="fill"></span>
+                                    <span class="fill" style="width:100%"></span>
                                 </div>   
                                 <div class="output">
-                                    <div class="left">50% Complete</div>
-                                    <div class="right"><span>1</span> / 2</div>
+                                    <div class="left">100% Complete</div>
+                                    <div class="right"><span>2</span> / 2</div>
                                 </div>
                             </div>
                         </div>

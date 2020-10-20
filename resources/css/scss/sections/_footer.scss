@@ -114,6 +114,10 @@
 
     .designby {
     }
+
+	@include media(max-width, 767px) {   
+        
+    }   
     
 	@include media(max-width, 767px) {   
         text-align: center;
@@ -122,11 +126,35 @@
             padding-bottom: 0;
         }
 
-        .foot_contact {
-            max-width: none;
+        .foot_logo {
+            display: block;
+            a {
+                margin-bottom: 10px;
+            }
+
+            h3 {
+                margin-left: 0;
+                margin-bottom: 15px;
+                max-width: none;
+            }
         }
 
-        
+        .foot_contact {
+            max-width: none;
+            margin-bottom: 10px;
+        }
+
+        .follow_us {
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+
+        .copyright {
+            float: none;
+            text-align: center;
+            margin-right: 0;
+        }
+
         .designby {
             text-align: center;
         }
