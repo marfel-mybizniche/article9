@@ -1,7 +1,23 @@
-.sec_content {
-    padding:50px 0;
+
+.page_title {
+    margin:10px 0 60px;
+    text-align: center;
+
+    
+
+    @include media(max-width, 639px) {
+        margin:0 0 30px;
+    }
 }
 
+.sec_content {
+    padding:60px 0;
+
+    @include media(max-width, 639px) {
+        padding: 40px 0;
+    }
+}
+ 
 .sec_article {
     background: $color-light;
 
@@ -597,7 +613,770 @@
         }
     }
     
-    
 }
 
 
+
+.sec_account {
+    background: $color-white;
+    padding: 60px 0;
+    position: relative;
+
+    hr {
+        max-width: none;
+        border-color: $color-grey-5;
+    }
+    
+    .breadcrumbs {
+        position: absolute;
+        top: 0;
+        padding:20px 0 0;
+    }
+
+    .accout_info {
+        padding:50px 0 100px;
+        
+        h2 {
+            font-size: 32px;
+            color: $color-primary;
+            margin:0;
+        }
+
+        .date {
+            font-size: 16px;
+            small {
+                display: block;
+                font-size: 14px;
+            }
+            span {
+                font-weight: bold;
+                color: $color-dark;
+            }
+        }
+
+        .logout {
+            color: $color-dark;
+            font-size: 16px;
+            font-weight: bold;
+
+            i {
+                color: $color-primary;
+            }
+        }
+
+        .profile {
+            position: relative;
+
+            figure {
+                width: 90px;
+                height: 90px;
+                border-radius: 50%;
+                overflow: hidden;
+                float: left;
+                margin: 0 20px 15px 0;
+            }
+
+            .name {
+                margin: 0 0 5px;
+            }
+
+            .email {
+                color: $color-primary;
+            }
+
+            .edit {
+                clear: both;
+            }
+        }
+        .endpoints {
+            ul {
+                margin:0;
+                padding:0;
+
+                li {
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+
+                    i {
+                        color: $color-primary;
+                        display: inline-block;
+                        width: 20px;
+                        text-align: center;
+                        margin:0 10px 0 0;
+                    }
+
+                    a {
+                        color: $color-black;
+                        padding: 6px 0;
+                        display: block;
+                        line-height: 1;
+
+                        &:hover {
+                            color: $color-primary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .your_courses {
+
+        .head {
+            border-bottom: 1px solid $color-grey-5;
+            margin-bottom: 20px;
+            h4 {
+                font-size: 24px;
+                margin-bottom: 10px;
+
+                i {
+                    color: $color-primary;
+                    margin:0 10px 0 0;
+                }
+            }
+
+            .btn_viewall {
+                font-size: 16px;
+                float: right;
+                margin: -35px 0 0;
+                color: $color-grey-4;
+
+                i {
+                    color: $color-primary;
+                }
+            }
+        }
+
+        .list {
+            h4 {
+                color: $color-secondary;
+            }
+        }
+    }
+
+    .course_item {
+        position: relative;
+        margin:0 0 100px;
+
+        .date_image {
+            position: relative;
+            margin:0 0 20px;
+        }
+
+        .course_img {
+            margin: 0 0 0 90px;
+
+            img {
+                width: 100%;
+                min-height: 150px;
+                object-fit: cover;
+            }
+        }
+
+        .course_date {
+            width: 90px;
+            position: absolute;
+            left: 0;
+            top:0;
+            bottom: 0;
+            background: $color-primary;
+            text-align: center;
+            
+            .cd_top {
+                height: calc(100% - 55px);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .cd_icon {
+                    font-size: 40px;
+                    color: $color-white;
+                    display: inline-block;
+                }
+                .cd_date {
+                    font-size: 40px;
+                    font-weight: bold;
+                    color: $color-white;
+                    display: inline-block;
+                    line-height: 1;
+                    small {
+                        font-size: 12px;
+                        text-transform: uppercase;
+                        display: block;
+                        line-height: 1;
+                    }
+                }
+            }
+
+            .cd_bot {
+                background: #1d2835;
+                height: 55px;
+                line-height: 55px;
+                color: $color-white;
+                font-weight: bold;
+                font-size: 14px;
+
+                span {
+                    display: inline-block;
+                    vertical-align: middle;
+                    line-height: 1.2;
+                    padding:0 10px;
+                }
+            }
+        }
+
+        .course_details {
+            min-height: 95px;
+
+            h3  {
+                font-size: 18px;
+                margin-bottom: 5px;
+            } 
+
+            h5 {
+                font: bold 14px $heading-font-family;
+                color: $color-primary;
+            }     
+
+            .course_info {
+                margin:0 0 10px;
+                padding:0 0 25px;
+                display: flex;
+                flex-flow: wrap;
+                border-bottom: 1px solid $color-grey-1;
+
+                li {
+                    list-style: none;
+                    margin:0 40px 0 0;
+                    font-size: 14px;
+
+                    i {
+                        font-size: 16px;
+                        color: $color-primary;
+                    }
+                }
+            }
+
+            .course_by {
+                padding:0 50px 20px 0;
+                font-size: 14px;
+                border-bottom: 1px solid $color-grey-1;
+                margin:0 0 10px;
+
+                .photo {
+                    float: right;
+                    margin:0 0 0 15px;
+                    width: 45px;
+                    border-radius: 50%;
+                }
+            }
+        }
+
+    }
+    
+    @include media(max-width, 639px) {
+        padding: 40px 0;
+    }
+}
+
+
+.sec_cart {
+    padding: 60px 0;
+    background: $color-light;
+
+    .btn_proceed {
+        display: inline-block;
+        margin:0 0 20px;
+        font-size: 14px;
+        color: $color-dark;
+
+        &:hover {
+            color: $color-primary;
+        }
+
+        i {
+            color: $color-primary;
+            margin:0 0 0 10px;
+        } 
+    }
+
+    .btn_view {
+        display: inline-block;
+        margin:0 0 20px;
+        font-size: 14px;
+        color: $color-dark;
+
+        &:hover {
+            color: $color-primary;
+        }
+
+        i {
+            color: $color-primary;
+            margin:0 0 0 10px;
+        } 
+    }
+
+    .pcart_box {
+        max-width: 930px;
+        margin:0 auto;
+    }
+
+    .pcart_list {
+        border-bottom: 1px solid $color-grey-7;
+    }
+
+    .pcart_item {
+        position: relative;
+        background: $color-white;
+        padding:40px 50px 30px;
+        margin:0 0 20px;
+        border-radius: 5px;
+
+        .pcart_img {
+            margin-bottom: 15px;
+        }
+
+        .pcart_info {
+            font-size: 14px;
+            color: $color-dblue-1;
+            h3 {
+                font-size: 24px;
+                margin-bottom: 5px;
+            }
+            p {
+                margin-bottom: 10px;
+            }
+            ul {
+                margin:0;
+                padding:0;
+
+                li {
+                    list-style: none;
+                    font-weight: 300;
+                    margin:0 0 5px;
+
+                    i {
+                        font-size: 13px;
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+
+        .pcart_price {
+            text-align: right;
+            font-size: 20px;
+            font-weight: 500;
+            small {
+               font-size: 14px;
+               display: block;
+               color: $color-alert;
+            } 
+        }
+        .two-cols {
+            columns: 2;
+        }
+
+        .delete {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            color: $color-grey-4;
+            font-size: 12px;
+
+            &:hover {
+                color: $color-alert;
+            }
+        }
+    }
+
+    .pcart_discount {
+        padding: 20px 50px;
+        border-bottom: 1px solid $color-grey-7;
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        font-weight: 500;
+
+        .stotal {
+            color: $color-alert;
+            margin-left: auto;
+        }
+    }
+    
+    .pcart_collaterals {
+        text-align: right;
+        padding:20px 0;
+
+        .gtotal {
+            font-size: 20px;
+            font-weight: 500;
+            color: $color-dark;
+
+            small {
+                font-size: 14px;
+                color: $color-dblue-1;
+            }
+        }
+
+        .checkout {
+            .button {
+                float: right; 
+                margin:0 0 0 30px;
+
+                i {
+                    font-size: 22px;
+                    margin:-4px 5px 0 0;
+                }
+            }
+
+            .method {
+                margin:12px 0 0;
+            }
+        }
+    }
+    
+    .pcart_empty {
+        position: relative;
+        background: $color-white;
+        color: $color-dblue-1;
+        padding:40px 50px 30px;
+        margin:0 0 20px;
+        border-radius: 5px;
+        font-size: 14px;
+
+        h3 {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+    }
+
+    @include media(max-width, 639px) {
+        padding: 40px 0;
+    }
+}
+
+
+.sec_checkout {
+    padding: 60px 0;
+    background: $color-light;
+
+    .checkout_box {
+        max-width: 1170px;
+        margin:0 auto;
+    }
+
+    .checkout_register {
+        background: $color-white;
+        padding: 40px 50px;
+        border-radius: 5px;
+        font-size: 14px;
+        margin-bottom: 30px;
+
+        > *:last-child {
+            margin-bottom: 0;
+        }
+
+        h3 {
+            font-size: 18px;
+            color: $color-primary;
+
+            small {
+                font-size: 14px;
+                font-weight: normal;
+                float: right;
+                margin: 10px 0 0;
+            }
+
+            a {
+                color: $color-secondary;
+            }
+        }
+
+        .field {
+            margin:0 0 15px;
+        }
+
+        .action {
+            margin-bottom: 15px;
+        }
+    }
+    
+    .checkout_confirm {
+        background: $color-white;
+        padding: 40px;
+        border-radius: 5px;
+        font-size: 14px;
+        margin-bottom: 30px;
+
+        h3 {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .confirm_gateway {
+            position: relative;
+        }
+    }
+
+    .checkout_course {
+        background: $color-white;
+        padding: 40px 50px;
+        border-radius: 5px;
+        margin:0 0 20px;
+
+        hr {
+            border-color: $color-grey-5;
+        }
+    }
+
+
+    .checkout_item {
+        position: relative;
+
+        .course_img {
+            margin-bottom: 20px;
+        }
+
+        .course_info {
+            margin-bottom: 15px;
+            font-size: 14px;
+            color: $color-dblue-1;
+            h3 {
+                font-size: 24px;
+                margin-bottom: 5px;
+            }
+            p {
+                margin-bottom: 10px;
+            }
+            ul {
+                margin:0;
+                padding:0;
+
+                li {
+                    list-style: none;
+                    font-weight: 300;
+                    margin:0 0 5px;
+
+                    i {
+                        font-size: 13px;
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+
+        .course_price {
+            float: right;
+            text-align: right;
+            font-size: 20px;
+            font-weight: 500;
+            small {
+                font-size: 14px;
+                display: block;
+                color: $color-alert;
+            } 
+        }
+    }
+
+    .checkout_discount {
+        padding: 20px 10px;
+        border-top: 1px solid $color-grey-5;
+        border-bottom: 1px solid $color-grey-5;
+        font-size: 14px;
+        font-weight: 500;
+
+        .cell {
+            display: flex;
+            align-items: center;
+        }
+
+        .stotal {
+            color: $color-alert;
+            margin-left: auto;
+        }
+    }
+    
+    .checkout_collaterals {
+        text-align: right;
+        padding:20px 10px;
+
+        .gtotal {
+            font-size: 20px;
+            font-weight: 500;
+            color: $color-dark;
+
+            small {
+                font-size: 14px;
+                color: $color-dblue-1;
+            }
+        }
+    }
+
+    .course_timeline {
+        margin: 25px 0;
+        font-size: 14px;
+
+        ul {
+            margin:0;
+            padding:0;
+            li {
+                list-style: none;
+                color: $color-grey-6;
+                cursor: default;
+                position: relative;
+                padding:10px 75px 10px 35px;
+                border: 1px solid transparent;
+                margin:0 0 5px;
+                border-radius: 5px;
+                line-height: 1;
+
+                &:hover {
+                    border: 1px solid $color-grey-5;
+                    background: $color-grey-1;
+                }
+
+                &:before {
+                    font-family: "apt-icons";
+                    content: "\5a";
+                    position: absolute;
+                    left: 10px;
+                    font-size: 18px;
+                    line-height: 1;
+                    top: 8px;
+                }
+
+                a {
+                    display: block;
+                    padding:10px 0 10px 35px;
+                    color: $color-grey-6;      
+                    position: relative; 
+                    line-height: 1;
+                    
+                    &:before {
+                        content: "\31";
+                        font-family: "apt-icons";
+                        position: absolute;
+                        left: 10px;
+                        line-height: 1;
+                        font-size: 15px;
+                        top: 10px;
+                    }  
+                }
+
+                .time {
+                    position: absolute;
+                    right: 0;
+                    top:10px;
+                    width: 55px;
+                    font-size: 14px;
+
+                    &:after {
+                        content: "\63";
+                        font-family: "apt-icons";
+                        position: absolute;
+                        font-size: 12px;
+                        right: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .disclaimer {
+        font-size: 13px;
+        color: $color-grey-9;
+        max-width: 560px;
+        margin:0 auto 20px;
+    }
+
+    .sercure_payment {
+        margin: 40px 0 0;
+        font-size: 13px;
+        color: $color-grey-9;
+
+        h3 {
+            font-size: 18px;
+            margin:0 0 5px;
+            color: $color-dark;
+        }
+    }
+
+    .thank-you {
+        width: 470px;
+        max-width: 100%;
+        margin:0 auto;
+        text-align: center;
+        font-size: 14px;
+        color: $color-dblue-1;
+
+        .thank-you-in {
+            max-width: 380px;
+            margin:0 auto;
+
+            figure {
+                margin:0 0 20px;
+            }
+        }
+    }
+
+    @include media(max-width, 639px) {
+        padding:40px 0;
+
+        .checkout_register {
+            padding: 20px;
+
+            h3 {
+                font-size: 16px;
+
+                small {
+                    font-size: 12px;
+                }
+            }
+        }
+
+        .checkout_course {
+            padding:20px;
+        }
+
+        .checkout_discount {
+            .label {
+                font-size: 11px;
+                padding:8px 10px;
+            }
+        }
+    }
+}
+
+.verification_box {
+    width: 390px;
+    max-width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: $color-white;
+    border-radius: 5px;
+    padding:30px;
+    z-index: 99999;
+    font-size: 14px;
+    color: $color-dblue-1;
+
+    > *:last-child {
+        margin-bottom: 0;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+}
+.verification_overlay {
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom: 0;
+    z-index: 9999;
+}

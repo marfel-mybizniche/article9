@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20.958" height="20.958" viewBox="0 0 20.958 20.958">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:#c52540;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px}
+        </style>
+    </defs>
+    <g id="icn-order-history" transform="translate(-47.266 -165.65)">
+        <g id="Icon_feather-package" transform="translate(43.574 166.789)">
+            <path id="Path_4224" d="M18.452 10.468l-7.2-4.153" class="cls-1" transform="translate(-3.149 -1.545)"/>
+            <path id="Path_4225" d="M18.9 14.2V7.8a1.6 1.6 0 0 0-.8-1.384l-5.6-3.2a1.6 1.6 0 0 0-1.6 0l-5.6 3.2A1.6 1.6 0 0 0 4.5 7.8v6.4a1.6 1.6 0 0 0 .8 1.384l5.6 3.2a1.6 1.6 0 0 0 1.6 0l5.6-3.2a1.6 1.6 0 0 0 .8-1.384z" class="cls-1"/>
+            <path id="Path_4226" d="M4.9 10.44l6.986 4.041 6.986-4.041" class="cls-1" transform="translate(-.189 -3.469)"/>
+            <path id="Path_4227" d="M18 26.066V18" class="cls-1" transform="translate(-6.298 -6.996)"/>
+        </g>
+        <path id="Icon_awesome-history" fill="#c52540" d="M7.809 4.179a3.624 3.624 0 0 1-5.9 2.828.35.35 0 0 1-.027-.52l.165-.165a.351.351 0 0 1 .466-.029 2.689 2.689 0 1 0-.172-4.066l.742.742a.234.234 0 0 1-.165.4H.8a.234.234 0 0 1-.234-.234V1.01a.234.234 0 0 1 .4-.165l.721.721a3.623 3.623 0 0 1 6.122 2.613zM5.166 5.33l.144-.185a.351.351 0 0 0-.062-.492l-.595-.463V2.666a.351.351 0 0 0-.353-.35h-.231a.351.351 0 0 0-.351.351v1.981l.956.743a.351.351 0 0 0 .492-.062z" transform="translate(60.414 165.088)"/>
+    </g>
+</svg>

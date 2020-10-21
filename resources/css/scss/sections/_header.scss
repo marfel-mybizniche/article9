@@ -11,14 +11,13 @@ header {
 		z-index: 999;
 
 		.hsnav-s9 {
-			background: rgba($color-white, 0.5);
+			background: darken($color-white, 3%);
 			box-shadow: none;
 		}
 	}
 	.hsnav-s9 {
-		background: $color-white;
+		background: darken($color-white, 3%);
 		max-width: none !important;
-		box-shadow: 0 3px 15px 0 $color-grey-1;
 		
 		&.sticky {
 			position: absolute;
@@ -29,7 +28,8 @@ header {
 		}
 		&.is-stuck {
 			position: fixed;
-			background: $color-white;
+			background: darken($color-white, 3%);
+			//box-shadow: 0 3px 15px 0 $color-grey-1;
 		}
 
 		.navbar {

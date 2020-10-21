@@ -34,8 +34,6 @@
 
 
 
-
-
 //Custom foundation 
 @include media(min-width, 1600px) {
     .grid-x {
@@ -65,6 +63,43 @@
     }
 }
 
+
+.breadcrumbs {
+    padding:30px 0;
+
+    li {
+        text-transform: none;
+
+        img {
+            vertical-align: top;
+        }
+
+        &:not(:last-child):after {
+            content: "\63";
+            font-family: "apt-icons" !important;
+        }
+        a {
+            color: $color-dark;
+            font-size: 13px;
+        }
+    }
+}
+
+
+.badge {
+    vertical-align: middle;
+    &.dark {
+        background: $color-dark;
+    }
+}
+
+.label {
+	border-radius: 5px;
+
+    &.dark {
+        background: $color-dark;
+    }
+}
 
 
 //Sticky Fixer for smooth scroll content
