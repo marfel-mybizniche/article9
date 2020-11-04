@@ -151,6 +151,28 @@ select {
     }
 }
 
+.fields {
+    display: flex;
+    flex-flow: wrap;
+    margin-right: -15px;
+
+    * {
+        width: 100%;
+    }
+
+    .field {
+        width: 50%;
+        padding-right: 15px;
+    }
+
+    @include media(max-width, 639px) {
+        .field {
+            width: 100%;
+        }
+    }
+}
+
+
 .custom-radio {
     label {
         position: relative;
