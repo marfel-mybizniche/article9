@@ -13,6 +13,7 @@
         <h1 class="page_title">Account Settings</h1>
  
         <div class="account_settings">
+            <h5>Your photo</h5>
             <div class="your_photo">
                 <figure><img src="<?php echo MBN_ASSETS_URI ?>/img/Lauren.jpg" alt=""></figure>
                 <p>
