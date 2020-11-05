@@ -50,10 +50,10 @@
                             </ul>
                             <div class="quiz_action">
                                 <div class="float-left">
-                                    <div class="label rounded"><i class="ai-check-circle"></i> Sorry, please try again.</div>
+                                    <div class="label rounded tt-none"><i class="ai-check-circle"></i> Sorry, please try again.</div>
                                 </div>
                                 <div class="float-right">
-                                    <a href="#" class="button clear grey nomin"><i class="ai-refresh circle-grey"></i> Retry</a>
+                                    <a href="#" class="button clear grey nomin"><i class="ai-refresh circle-lgrey"></i> Retry</a>
                                     <a href="#" class="button secondary hollow"><i class="ai-play circle-dark"></i> Watch Again</a>
                                 </div>
                             </div>

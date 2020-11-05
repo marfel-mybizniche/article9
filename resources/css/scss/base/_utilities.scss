@@ -32,11 +32,15 @@
     font-family: $font-family-oswald;
 }
 
+.tt-none {
+	text-transform: none !important;
+}
+
 
 
 //Custom foundation 
 @include media(min-width, 1600px) {
-    .grid-x {
+    .grid-x { 
         > .xlarge-3 {
             width: 25%;
         }

@@ -42,11 +42,11 @@
             width: 24px;
             height: 24px;
             line-height: 22px;
-            font-size: 12px;
+            font-size: 13px;
             display: inline-block;
             border-radius: 50%;
             background: $color-secondary;
-            color: $color-white;
+            color: $color-white; 
             text-align: center;
             margin-top: -3px;
 
@@ -69,9 +69,17 @@
             background: $color-grey-4;
         }
 
+        &.circle-lgrey {
+            background: $color-grey-10;
+        }
+
         &.right{
             margin-right: -5px;
             margin-left: 10px;
+        }
+
+        &.ai-refresh {
+            font-size: 14px;
         }
     }
 

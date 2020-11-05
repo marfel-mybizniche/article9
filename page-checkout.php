@@ -40,7 +40,7 @@
                         <div class="action">
                             <button class="button expanded">Create an account Now</button>
                         </div>
-                        <p class="disclaimer">By clicking “Create an account” I am confirming I am 16 or older and I accept the Terms of Use, the Privacy Policy, the Cookies Policy, and agree to receive news and promotions.</p>
+                        <p class="disclaimer">By clicking “Create an account” I am confirming I am 16 or older and I accept the <a href="#">Terms of Use</a>, the <a href="#">Privacy Policy</a>, the <a href="#">Cookies Policy</a>, and agree to receive news and promotions.</p>
                         <p>Already have an account? <a href="#">Click here to login</a>!</p>
                     </div>
                 </div>

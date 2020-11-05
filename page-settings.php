@@ -33,7 +33,7 @@
                 </div>
             </div>
             <div class="your_fields">
-                <h5>Account logins</h5>
+                <h5>Account logins <a class="right" href="#">Forgot Password?</a></h5>
                 <div class="field">
                     <input type="password" placeholder="Current Password">
                 </div>
