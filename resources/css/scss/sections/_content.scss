@@ -1054,9 +1054,7 @@
 
     @include media(max-width, 639px) {
         padding: 40px 0;
-    }
-
-    @include media(max-width, 375px) {
+        
         .pcart_item {
             padding: 20px;
 
@@ -1068,7 +1066,7 @@
 
         .pcart_discount {
             padding:20px 20px 20px 0;
-        }
+        } 
     }
 }
 
@@ -1079,7 +1077,7 @@
 
     .checkout_box {
         max-width: 1170px;
-        margin:0 auto;
+        margin:0 auto; 
     }
 
     .checkout_register {
