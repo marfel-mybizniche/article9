@@ -874,6 +874,10 @@
         }
 
     }
+
+    .refund_box {
+        
+    }
     
     @include media(max-width, 639px) {
         padding: 60px 0 40px;
@@ -1452,5 +1456,28 @@
         &.discard {
             background: $color-grey-6;
         }
+    }
+}
+
+.refund_request {
+    max-width: 930px;
+    padding: 40px 60px;
+    margin: 0 auto;
+    background: $color-grey-12;
+
+    h5 {
+        margin-bottom: 5px;
+    }
+
+    .balance {
+        font-size: 48px;
+        font-weight: bold;
+        line-height: 1.2;
+        margin-bottom: 30px;
+    }
+    
+    @include media(max-width, 767px) {
+        text-align: center;
+        padding: 40px 15px;
     }
 }
