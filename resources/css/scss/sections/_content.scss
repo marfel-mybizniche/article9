@@ -620,17 +620,25 @@
 .sec_account {
     background: $color-white;
     padding: 60px 0;
-    position: relative;
+    position: relative; 
 
     hr {
         max-width: none;
-        border-color: $color-grey-5;
+        border-color: $color-grey-5;  
     }
     
     .breadcrumbs {
         position: absolute;
         top: 0;
         padding:20px 0 0;
+
+        li {
+            &:after {
+                color: $color-grey-4;
+                line-height: 1;
+                font-size: 13px; 
+            } 
+        }
     }
 
     .accout_info {
